@@ -17,13 +17,17 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
+  <link rel="stylesheet" href="{{url_for('static', filename='./vendor/bootstrap/css/bootstrap.min.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='./vendor/icofont/icofont.min.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='./vendor/boxicons/css/boxicons.min.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='./vendor/aos/aos.css')}}" />
+
   <title>Counterfeit v/s Original</title>
 
   <link rel="stylesheet" href="{{url_for('static', filename='./css/style.css')}}" />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
 
 </head>
 <body>
@@ -250,7 +254,8 @@
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-<!-- Template Main JS File -->
+  <script src="{{url_for('static', filename='./vendor/aos/aos.js')}}"></script>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
