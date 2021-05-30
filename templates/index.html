@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, user-scalable=no"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <title>Counterfeit v/s Original</title>
+
+  <link rel="stylesheet" href="{{url_for('static', filename='./css/style.css')}}" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        <a href="https://www.amazon.in/">
+            <img src="{{url_for('static', filename='./img/logo1.png')}}" class="img-fluid" alt=""></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#predict">Predict</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </nav>
+
+      <!-- nav-menu -->
+    </div>
+  </header>
+  <!-- End Header -->
+
+  
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1>Counterfeit<br> Objects<br> Detection</h1>
+      <h2  style="color: #480007; font-size: 28px;"> <strong>Say No to Counterfeit Products!!!</strong><h2>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-xl-6 col-lg-7" data-aos="fade-right">
+            <img src="{{url_for('static', filename='./img/bgabout.jpg')}}" class="img-fluid" alt="">
+          </div>
+          <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
+            <h2 data-aos="fade-up">About</h3>
+            <p data-aos="fade-up">
+              To overcome this problem of counterfeit products, we came upon a solution by implementing machine learning-based technology,
+              which enables e-commerce platforms to automate the process of detecting and identifying these Online Counterfeit listings.
+            </p>
+            <div class="icon-box" data-aos="fade-up">
+              <i class="bx bx-receipt"></i>
+              <h4>Our solution comprises of two steps:</h4>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-cube-alt"></i>
+              <p>Detect these brand logos in images.</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-cube-alt"></i>
+              <p>Classify them as Counterfeit vs. Genuine using Deep Learning</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    
+<!-- ======= Predict Section ======= -->
+<section id="predict" class="predict">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+      <h2>Predict</h2>
+      <p>Upload the image to know the probability of Counterfeit Products of Adidas and Nike</p>
+    </div>
+
+    <div class="row mt-5 justify-content-center" data-aos="fade-up">
+      <div class="col-10">
+        <form role="form" class="predict-form">
+  
+          <div class="form-group">
+              <input id="imageinput" class="form-control" type="file" name="image" onchange="readUrl(this)" required>
+          </div>
+         
+          <div class="member text-center" style="overflow:auto;">
+            <img id="imagebox" class="img-fluid" src="" style="margin: 2rem auto;">
+          </div>
+        
+        </form>
+        
+        <div class="text-center"><button name="send" id = "sendbutton" type="submit">Predict Result</button></div>
+      
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Predict Section -->
+
+  <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2><strong> Team : Aquite</strong></h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="member">
+                  <img src="{{url_for('static', filename='./img/team/team-1.jpg')}}" class="img-fluid" alt="">
+            <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Rama Edlabadkar</h4>
+                  <span><strong>Email: </strong>ramaedlabadkar@gmail.com</span>
+                </div>
+                <div class="social">
+                  <a href="https://github.com/skybluee2001"><i class="fa fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/rama-edlabadkar-7377061b1/"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+                  <img src="{{url_for('static', filename='./img/team/team-2.jpg')}}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                    <h4>Anjali Gupta</h4>
+                    <span><strong>Email: </strong>guptaanjali7786@gmail.com</span>
+                </div>
+                <div class="social">
+                  <a href="https://github.com/anjali7786"><i class="fa fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/anjali-gupta-8a6b721a3/"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+                  <img src="{{url_for('static', filename='./img/team/team-3.jpg')}}" class="img-fluid" alt="">
+
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Anjali Singhal</h4>
+                  <span><strong>Email: </strong>anjalisinghal18@gmail.com</span>
+                </div>
+                <div class="social">
+                 <a href="https://github.com/anjiii-18"><i class="fa fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/anjali-s-b32153102"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+                  <img src="{{url_for('static', filename='./img/team/team-4.jpg')}}" class="img-fluid" alt="">
+
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sakshi Pandey</h4>
+                  <span><strong>Email: </strong>sakshiipandey2000@gmail.com</span>
+                </div>
+                <div class="social">
+                  <a href="https://github.com/sakshi012000"><i class="fa fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/sakshi-pandey-51066a196/"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+</main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="footer-info">
+              <h3>Counterfeit vs. Original</h3>
+              <p>Increase in counterfeit products have led to trust
+                issues in the customers specially while shopping online so
+                here this issue can be resolved by just inputting the
+                desired product and checking it's originality.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#predict">Predict</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#team">Team</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+<!-- Template Main JS File -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+
+</body>
+
+</html>
+
+
+
